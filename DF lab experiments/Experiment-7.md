@@ -18,17 +18,17 @@ This experiment documents the steps to use AFLogical OSE to collect logical arti
    - Enable Developer Options → USB Debugging on the Android device.
    - Ensure device is unlocked and accessible; note device model and Android version.
    - Verify adb connection: `adb devices`
-   ![alt text](<screenshot 7/Screenshot 2025-10-27 232429.png>)
+   - ![ADB Device Connection](screenshot%207/Screenshot%202025-10-27%20232429.png)
 
 2. Obtain AFLogical OSE:
    - Place AFLogical OSE files (script/jar) onto the host working directory.
    - Confirm required runtime (Java/Python) is available.
-   - ![alt text](<screenshot 7/Screenshot 2025-10-27 232603.png>)
+   - ![AFLogical OSE Setup](screenshot%207/Screenshot%202025-10-27%20232603.png)
 
 3. Configure extraction parameters:
    - Review AFLogical OSE options (artifact categories, output folder).
    - Choose extraction scope (contacts, SMS, call logs, app data, media, system settings).
-   ![alt text](<screenshot 7/Screenshot 2025-10-27 233156.png>)
+   - ![Extraction Configuration](screenshot%207/Screenshot%202025-10-27%20233156.png)
 
 4. Run AFLogical OSE:
    - Connect device via USB and accept any prompts on-device.
@@ -36,12 +36,12 @@ This experiment documents the steps to use AFLogical OSE to collect logical arti
      - `adb shell` then run AFLogical OSE via available method, or
      - `java -jar AFLogicalOSE.jar -o output_dir` (adjust to your AFLogical OSE variant)
    - Monitor output for success messages and any errors.
-   - ![alt text](<screenshot 7/Screenshot 2025-10-27 233156.png>)
+   - ![Run Extraction](screenshot%207/Screenshot%202025-10-27%20233156.png)
 
 5. Retrieve and organize extracted data:
    - If extraction wrote to device storage, pull to host: `adb pull /sdcard/AFLogical_output ./evidence/`
    - Ensure the output directory contains expected folders/files (contacts.vcf, sms.xml, calllog.db, app folders).
-   - ![alt text](<screenshot 7/Screenshot 2025-10-27 233749.png>)
+   - ![Retrieved Data](screenshot%207/Screenshot%202025-10-27%20233749.png)
 
 6. Verify integrity and document:
    - Compute hashes for the extraction archive/files: `md5sum` / `sha1sum`.
