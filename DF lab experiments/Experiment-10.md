@@ -21,7 +21,7 @@ This experiment describes a practical Ghidra workflow for static malware analysi
 
 2. Create a Ghidra project:
    - Open Ghidra → File → New Project → Non-Shared Project → choose project folder.
-![alt text](<screenshot 1/Screenshot 2025-08-31 191052.png>)
+![alt text](<screenshot 10/Screenshot From 2025-10-26 01-17-47.png>)
 
 3. Import the binary:
    - File → Import File → select sample binary.
