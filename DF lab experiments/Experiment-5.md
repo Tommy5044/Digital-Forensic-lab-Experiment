@@ -19,37 +19,35 @@ This exercise takes you step-by-step through the common Autopsy workflow: starti
    - File → New Case.
    - Enter Case Name, Case Number (optional), Examiner, and Case Location.
    - Click "Create".
-   ![alt text](<screenshot 5\Screenshot 2025-10-21 095716.png>)
-   ![alt text](<screenshot 5\Screenshot 2025-10-21 095931.png>)
+   !![alt text](<screenshot 5/Screenshot 2025-10-21 095716.png>)
+   !![alt text](<screenshot 5/Screenshot 2025-10-21 095931.png>)
 
 3. Create or open a case directory:
    - Confirm the default case folder or choose a custom location.
-   ![alt text](<screenshot 5\Screenshot 2025-10-21 100458.png>)
+   ![alt text](<screenshot 5/Screenshot 2025-10-21 100458.png>)
 
 4. Add a data source (import evidence):
    - Click "Add Data Source".
    - Select the appropriate data source type (Disk Image, Logical Files, Local Disk, etc.).
    - For disk images, choose the image file (E01/RAW/aff or similar).
    - Configure image options if required and proceed.
-   ![alt text](<screenshot 5\Screenshot 2025-10-21 100737.png>)
-  ![alt text](<screenshot 5\WhatsApp Image 2025-10-21 at 12.35.46_93afaa1e.jpg>)
-
+   ![alt text](<screenshot 5/Screenshot 2025-10-21 100737.png>)
+  ![alt text](<screenshot 5/WhatsApp Image 2025-10-21 at 12.35.46_93afaa1e.jpg>)
 5. Configure ingest modules:
    - Select modules to run (File Type Identification, Hash Lookup, EXIF, Keywords, Timeline, etc.).
    - Optionally use custom settings or default profile.
    - Start ingest.
-   ![alt text](<screenshot 5\Screenshot 2025-10-21 122244.png>)
-   ![alt text](<screenshot 5\Screenshot 2025-10-21 123825.png>)
+   ![alt text](<screenshot 5/Screenshot 2025-10-21 122244.png>)
+  ![alt text](<screenshot 5/Screenshot 2025-10-21 122904.png>)
 
 6. Monitor ingest and initial results:
    - Observe progress bar and logs.
    - After completion, review Case Dashboard, Extracted Files, File Types, Recent Activity, and Artifacts.
-   ![alt text](<screenshot 5\Screenshot 2025-10-21 122904.png>)
-   ![alt text](<screenshot 5\Screenshot 2025-10-21 123926.png>)
-
+   ![alt text](<screenshot 5/Screenshot 2025-10-21 123825.png>)
+   ![alt text](<screenshot 5/Screenshot 2025-10-21 123926.png>)
 7. Save or export findings:
    - Export reports or artifacts as needed (HTML, CSV, or other formats).
-   ![alt text](<screenshot 5\Screenshot 2025-10-21 123913.png>)
+   ![alt text](<screenshot 5/Screenshot 2025-10-21 123913.png>)
 
 
 ## Result

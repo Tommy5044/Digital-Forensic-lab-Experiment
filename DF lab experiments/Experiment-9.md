@@ -17,42 +17,39 @@ This experiment demonstrates how to use Process Explorer (Sysinternals) to triag
 ## Procedure
 1. Prepare environment:
    - Download Process Explorer and run as Administrator.
-   - ![Process Explorer Launch](<Screenshot 9/Screenshot 2025-10-28 000837.png>)
-
+   -![alt text](<screenshot 9/Screenshot 2025-10-28 000837.png>)
 2. Capture baseline and context:
    - Note system time, user, and recent changes (software installs, alerts).
    - Optionally save a snapshot (File → Save) for offline review.
-   - ![Capture Baseline](<Screenshot 9/Screenshot 2025-10-28 000901.png>)
+   -![alt text](<screenshot 9/Screenshot 2025-10-28 000901.png>)
 
 3. Identify suspicious processes visually:
    - Look for unknown process names, high CPU/IO, unusual parent processes (e.g., explorer.exe spawning cmd.exe hidden).
    - Expand process tree to view parent/child relationships.
-   - ![Process Tree View](<Screenshot 9/Screenshot 2025-10-28 000919.png>)
+   -![alt text](<screenshot 9/Screenshot 2025-10-28 000919.png>)
 
 4. Inspect properties of a suspect process:
    - Double-click process → check Image Path, Command Line, User, Company Name, and Description.
    - Check the PID, Start Time, CPU, and Threads.
-   - ![Process Properties](<Screenshot 9/Screenshot 2025-10-28 001049.png>)
-
+   -![alt text](<screenshot 9/Screenshot 2025-10-28 001049.png>)
 5. Verify digital signature and file details:
    - In the process properties, open the "Image" tab and view the digital signature status.
    - Use sigcheck or Get-FileHash to compute a file hash: `Get-FileHash -Algorithm SHA256 "C:\path\to\binary.exe"`
-   - ![Digital Signature Check](<Screenshot 9/Screenshot 2025-10-28 001133.png>)
+   -![alt text](<screenshot 9/Screenshot 2025-10-28 001133.png>)
 
 6. Check loaded DLLs and handles:
    - Use the "DLLs" tab to inspect loaded libraries for suspicious or unsigned modules.
    - Use the "Handles" tab to view files, registry keys, or named pipes in use.
-   - ![DLLs and Handles](<Screenshot 9/Screenshot 2025-10-28 001224.png>)
-
+   -![alt text](<screenshot 9/Screenshot 2025-10-28 001224.png>)
 7. Review network activity:
    - Right-click → "Properties" → "TCP/IP" (or use Process Explorer's lower pane) to view open connections and ports.
    - Correlate with firewall logs or netstat output.
-   - ![Network Connections](<Screenshot 9/Screenshot 2025-10-28 001305.png>)
+   -![alt text](<screenshot 9/Screenshot 2025-10-28 001305.png>)
 
 8. Cross-check with VirusTotal:
    - Submit the file hash or upload binary to VirusTotal; record detection ratio and AV names.
    - If using VirusTotal API or VTDesktop, document the result and timestamp.
-   - ![VirusTotal Results](<Screenshot 9/Screenshot 2025-10-28 001404.png>)
+   -![alt text](<screenshot 9/Screenshot 2025-10-28 001404.png>)
 
 9. Correlate with other tools:
    - Use Autoruns to check persistence entries or Process Monitor to capture file/registry activity if needed.
@@ -62,8 +59,7 @@ This experiment demonstrates how to use Process Explorer (Sysinternals) to triag
    - Save Process Explorer snapshot or export process list.
    - Record file paths, hashes, parent process, timestamps, VirusTotal results, and screenshots.
    - Store artifacts in case folder and generate a short report.
-   - ![Documentation](<Screenshot 9/Screenshot 2025-10-28 001432.png>)
-
+   -![alt text](<screenshot 9/Screenshot 2025-10-28 001432.png>)
 Notes:
 - Run as Administrator to view all process details.
 - Avoid terminating processes without case authorization; document actions before remediation.
