@@ -62,7 +62,7 @@ This experiment demonstrates how to use Process Explorer (Sysinternals) to triag
    - Save Process Explorer snapshot or export process list.
    - Record file paths, hashes, parent process, timestamps, VirusTotal results, and screenshots.
    - Store artifacts in case folder and generate a short report.
-   - ![Documentation](Screenshot%209/Screenshot%202025-10-28%20001432.png)
+   - ![Documentation](<Screenshot%209/Screenshot%202025-10-28%20001432.png>)
 
 Notes:
 - Run as Administrator to view all process details.
