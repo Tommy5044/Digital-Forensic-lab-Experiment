@@ -17,11 +17,11 @@ This experiment describes a practical Ghidra workflow for static malware analysi
 1. Prepare analysis environment:
    - Ensure Ghidra and Java are installed in an isolated VM or analysis machine.
    - Compute and record sample hashes: `md5sum sample.bin` / `sha256sum sample.bin`
-   ![Malware Hash Computation](<Screenshot%2010/Screenshot From 2025-10-26 01-33-37.png>)
+   ![alt text](<Screenshot%2010/Screenshot From 2025-10-26 01-33-37.png>)
 
 2. Create a Ghidra project:
    - Open Ghidra → File → New Project → Non-Shared Project → choose project folder.
-   ![Create Ghidra Project](Screenshot%2010/Screenshot%20From%202025-10-26%2001-17-47.png)
+   ![alt text](<![alt text](<screenshot 1/Screenshot 2025-08-31 191052.png>)>)
 
 3. Import the binary:
    - File → Import File → select sample binary.
